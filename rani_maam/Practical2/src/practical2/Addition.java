@@ -5,11 +5,6 @@
  */
 package practical2;
 
-/**
- *
- * @author nasha
- */
-
 class Calculator{
     void add(){
         int a, b, sum;

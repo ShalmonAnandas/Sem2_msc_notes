@@ -5,11 +5,6 @@
  */
 package practical2;
 
-/**
- *
- * @author nasha
- */
-
 class Perimeter{
     
     public void Perimeter(){
