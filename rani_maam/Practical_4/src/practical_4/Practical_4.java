@@ -7,7 +7,7 @@ package practical_4;
 
 /**
  *
- * @author nasha
+ * @author shalmon
  */
 public class Practical_4 {
 

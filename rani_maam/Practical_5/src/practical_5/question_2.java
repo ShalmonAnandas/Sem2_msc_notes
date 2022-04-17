@@ -7,7 +7,7 @@ package practical_5;
 
 /**
  *
- * @author nasha
+ * @author shalmon
  */
 import javax.swing.JOptionPane;
 public class question_2 extends javax.swing.JFrame {
@@ -68,7 +68,7 @@ public class question_2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jList1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList1MouseClicked
-        JOptionPane.showMessageDialog(jList1, jList1.getSelectedValue());
+        JOptionPane.showMessageDialog(jList1, jList1.getSelectedValue()+" was selected!!");
     }//GEN-LAST:event_jList1MouseClicked
 
     /**
@@ -82,7 +82,7 @@ public class question_2 extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

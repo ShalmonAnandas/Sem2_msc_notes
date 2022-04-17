@@ -5,11 +5,12 @@
  */
 package practical_5;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author nasha
+ * @author shalmon
  */
 public class question_4 extends javax.swing.JFrame {
 
@@ -38,6 +39,11 @@ public class question_4 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 204));
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                formComponentShown(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("LOGIN FORM");
@@ -45,12 +51,6 @@ public class question_4 extends javax.swing.JFrame {
         jLabel2.setText("Username:");
 
         jLabel3.setText("Password:");
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
 
         jButton1.setText("Click here to LOGIN");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -101,10 +101,6 @@ public class question_4 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if(jTextField1.getText().length() > 0 && jTextField2.getText().length() > 0){
             JOptionPane.showMessageDialog(jButton1, "LOGIN SUCCESSFULL");
@@ -113,6 +109,10 @@ public class question_4 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(jButton1, "ENTER YOUR DETAILS FIRST!");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
+        question_4.this.getContentPane().setBackground(new java.awt.Color(204,255,255));
+    }//GEN-LAST:event_formComponentShown
 
     /**
      * @param args the command line arguments
@@ -125,7 +125,7 @@ public class question_4 extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

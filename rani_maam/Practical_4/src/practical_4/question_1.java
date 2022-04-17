@@ -35,7 +35,6 @@ public class question_1 extends java.awt.Frame {
         label4 = new java.awt.Label();
 
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMinimumSize(new java.awt.Dimension(400, 350));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
@@ -79,14 +78,7 @@ public class question_1 extends java.awt.Frame {
     }//GEN-LAST:event_exitForm
 
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
-        if(textField1.getText().length() > 0 && textField2.getText().length() > 0){
-            label4.setVisible(false);
-            label3.setVisible(true);
-        }
-        else{
-            label3.setVisible(false);
-            label4.setVisible(true);
-        }
+        label3.setVisible(true);
     }//GEN-LAST:event_button1ActionPerformed
 
     /**

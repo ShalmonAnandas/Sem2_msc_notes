@@ -39,7 +39,7 @@ public class question_2 extends java.awt.Frame {
         label4 = new java.awt.Label();
         textField3 = new java.awt.TextField();
 
-        setMinimumSize(new java.awt.Dimension(400, 350));
+        setPreferredSize(new java.awt.Dimension(400, 300));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
@@ -76,7 +76,6 @@ public class question_2 extends java.awt.Frame {
             }
         });
         add(button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 60, -1));
-        button2.getAccessibleContext().setAccessibleName("SUB");
 
         button3.setLabel("MUL");
         button3.addActionListener(new java.awt.event.ActionListener() {

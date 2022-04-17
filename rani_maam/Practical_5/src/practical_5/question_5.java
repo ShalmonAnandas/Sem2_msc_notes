@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author nasha
+ * @author shalmon
  */
 public class question_5 extends javax.swing.JFrame {
 
@@ -44,8 +44,14 @@ public class question_5 extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                formComponentShown(evt);
+            }
+        });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practical_5/gnkhalsalogo.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\Sem2_msc_notes\\rani_maam\\Practical_5\\resources\\gnkhalsalogo.png")); // NOI18N
+        jLabel1.setToolTipText("");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -141,8 +147,15 @@ public class question_5 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showMessageDialog(jButton1, "Registered Successfuly");
+        new question_4().setVisible(true);
+        JOptionPane.showMessageDialog(jButton1, "Registered successfully");
+        question_5.this.setVisible(false);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
+        question_5.this.getContentPane().setBackground(new java.awt.Color(204,255,255));
+    }//GEN-LAST:event_formComponentShown
 
     /**
      * @param args the command line arguments
@@ -155,7 +168,7 @@ public class question_5 extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

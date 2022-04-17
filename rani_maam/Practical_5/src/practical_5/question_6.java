@@ -7,7 +7,7 @@ package practical_5;
 
 /**
  *
- * @author nasha
+ * @author shalmon
  */
 public class question_6 extends javax.swing.JFrame {
 
@@ -156,7 +156,6 @@ public class question_6 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        
         jLabel5.setVisible(false);
     }//GEN-LAST:event_formComponentShown
 
@@ -171,7 +170,7 @@ public class question_6 extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

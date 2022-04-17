@@ -7,7 +7,7 @@ package practical_4;
 
 /**
  *
- * @author nasha
+ * @author shalmon
  */
 public class question_3 extends java.awt.Frame {
 
@@ -38,7 +38,6 @@ public class question_3 extends java.awt.Frame {
         button1 = new java.awt.Button();
         label5 = new java.awt.Label();
 
-        setMinimumSize(new java.awt.Dimension(400, 350));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
