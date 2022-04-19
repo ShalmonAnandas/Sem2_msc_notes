@@ -1,0 +1,158 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.22000}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+10. \b whole-genome sequencing\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Easy to generate de novo draft genome sequences for any organism of choice\par
+{\pntext\f2\'B7\tab} a genome project requires careful planning with respect to the organism involved and the intended quality of the genome draft. \par
+{\pntext\f2\'B7\tab}Genome projects employ DNA sequencing, mapping, and computational technologies to understand molecular/cellular mechanisms, gene repertoires, genome architecture, and evolution\par
+{\pntext\f2\'B7\tab}Such technical advantages and established recommendations and strategies have been widely applied in humans, terrestrial animals, and plants and crops we could do aquatic species too but aquaculture applications are slower as compared to the rest.\par
+{\pntext\f2\'B7\tab}DNA sequencing is now routinely carried out using the Sanger method. This involves the use of DNA polymerases to synthesize DNA chains of varying lengths. \par
+{\pntext\f2\'B7\tab}The DNA synthesis is stopped by adding dideoxynucleotides. The dideoxynucleotides are labeled with fluorescent dyes, which terminate the DNA synthesis at positions containing all four bases, resulting in nested fragments that vary in length by a singlebase. \par
+{\pntext\f2\'B7\tab}When the labeled DNA is subjected to electrophoresis, the banding patterns in the gel reveal the DNA sequence.\par
+{\pntext\f2\'B7\tab}DNA sequences are read by a computer program that assigns bases for each peak in a chromatogram. This process is called base calling. automated base calling has errors so its often required to correct the sequence calls.\par
+{\pntext\f2\'B7\tab}two major strategies for whole genome sequencing: the \b shotgun approach \b0 and the \b hierarchical approach\b0\par
+{\pntext\f2\'B7\tab}\b SGA: sequencing many overlapping DNA fragments in parallel and then using a computer to assemble the small fragments into larger contigs and, eventually, chromosomes \b0 This is designed to minimize sequencing errors and ensure correct assembly of a contiguous(adjoining) sequence\par
+{\pntext\f2\'B7\tab}\b HA:s \b0 similar to the shotgun approach, but on a smaller scale \b begins by first generating a physical map. The overlapping clones that define the map are then shotgun cloned and sequenced\b0\par
+{\pntext\f2\'B7\tab}Although the approach has been successfully employed in sequencing small microbial genomes, for a complex eukaryotic genome that contains high levels of repetitive sequences, such as the human genome, the full shotgun approach becomes less accurate and tends to leave more \ldblquote holes\rdblquote  in the  final assembled sequence than the hierarchical approach. \par
+{\pntext\f2\'B7\tab}Current genome sequencing of large organisms often uses a combination of both approaches.\par
+
+\pard\sa200\sl276\slmult1\par
+\b Genome seq assembly:\b0\par
+The first step toward genome assembly is to derive base calls and assign associated quality scores. \par
+The next step is to assemble the sequence reads into contiguous sequences. This step includes identifying overlaps between sequence fragments, assigning the order of the fragments and deriving a consensus of an overall sequence. \par
+To assemble a whole genome sequence, these short fragments are joined to form larger fragments after removing overlaps. These longer, merged sequences are termed contigs, which are usually 5,000 to 10,000 bases long. \par
+Assembling all shotgun fragments into a full genome is a computationally very challenging step. \par
+There are a variety of programs available for processing the raw sequence data\par
+\b GENOME ANNOTATION:\b0\par
+DNA annotation or genome annotation is the process of identifying the locations of genes and all of the coding regions in a genome and determining what those genes do. An annotation is a note added by way of explanation or commentary. Once a genome is sequenced, it needs to be annotated to make sense of it.\par
+\par
+\b GENE ONTOLOGY\b0\par
+The Gene Ontology (GO) project is a major bioinformatics initiative to develop a computational representation of our evolving knowledge of how genes encode\par
+There are three different ontologies: cellular components, biological processes and molecular functions\b\par
+Publishing the genome: \b0 ensembl, ncbi provides opportunity to upload gene drafts\par
+\par
+\par
+\par
+\par
+\par
+\par
+\b\fs32 ucsc\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 UCSC Genome Bioinformatics Group and external collaboratord \f1 display \par
+{\pntext\f2\'B7\tab}gene predictions, \par
+{\pntext\f2\'B7\tab}mRNA and expressed sequence tag alignments, \par
+{\pntext\f2\'B7\tab}simple nucleotide polymorphisms, \par
+{\pntext\f2\'B7\tab}expression and regulatory data, \par
+{\pntext\f2\'B7\tab}phenotype and variation data, and \par
+{\pntext\f2\'B7\tab}pairwise and multiple\'02species comparative genomics data.\par
+{\pntext\f2\'B7\tab} All information relevant to a region is presented in one window, \par
+{\pntext\f2\'B7\tab}facilitating biological analysis and interpretation.\f0\par
+
+\pard\sa200\sl276\slmult1\par
+\f1\par
+\b\fs28 Ensembl \par
+\b0\fs22 is a genome browser for vertebrate genomes that supports research in \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 comparative genomics, \par
+{\pntext\f2\'B7\tab}evolution, sequence variation and transcriptional regulation. \par
+{\pntext\f2\'B7\tab}Ensembl annotate genes, \par
+{\pntext\f2\'B7\tab}computes multiple alignments, \par
+{\pntext\f2\'B7\tab}predicts regulatory function and collects disease data. \par
+{\pntext\f2\'B7\tab}Ensembl tools include BLAST, BLAT, BioMart and the Variant Effect Predictor (VEP) for all supported species.\par
+
+\pard\sa200\sl276\slmult1\par
+\f0 WEBLEM 8- Softberry\par
+\b\fs32 Tssw- \par
+\b0\fs24 to find  human Pol III promoter region\par
+distinguishes promoter sequences from non-promoter sequences\par
+ Algorithm predicts potential transcription start positions by linear discriminant function combining characteristics describing functional motifs and oligonucleotide composition of these sites\par
+\b\fs28 Bprom\par
+\b0 bacterial promoter\par
+It uses a linear discriminant function \par
+combined with signal and content information such as consensus promoter sequence and oligonucleotide composition of the promoter sites\par
+This program first predicts a given sequence for bacterial operon structures by using an intergenic distance of 100 bp as basis for distinguishing genes to be in an operon.\par
+the program is most effectively used when about 200 bp of upstream sequence of the first gene of an operon is supplied as input to increase specificity.\par
+\par
+\b FGENESB\b0\par
+To predict bacterial operon (a cluster of genes that are transcribed together to give a single messenger RNA (mRNA) molecule, which therefore encodes multiple proteins)\par
+The program is specifically trained for bacterial sequences. \par
+It uses the Vertibi algorithm to find an optimal match for the query sequence with the intrinsic model. \par
+A \b linear discriminant analysis (LDA\b0 ) is used to further distinguish coding signals from noncoding signals.\par
+\b FGENES \par
+\b0 is a web-based program that uses LDA to determine whether a signal is an exon. \par
+In addition to FGENES, there are many variants of the program. eg FGENESH making use of HMMs\par
+ Some programs, such as FGENESH+, combine both ab initio and similarity-based approaches.\par
+\par
+\b ORF \b0\par
+ORF finder can used to predict open reading frames in the genome. \par
+The program returns the range of each ORF, along with its protein translation. \par
+Use ORF finder to search newly sequenced DNA for potential protein encoding segments, verify predicted protein using  BLAST \par
+This information of long ORFs are often used, along with other evidence, to initially identify candidate protein-coding regions or functional RNA\'02coding regions in a DNA sequence. \par
+Small Open Reading Frames (small ORFs/sORFs/smORFs) are important sources of putative peptides previously dismissed as being non-functional or junk DNA.\par
+\par
+\par
+\b Vast +\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 detection of similarities between protein 3D structures for detection of homologous relationships, the classification of protein families and functional inference.\par
+{\pntext\f2\'B7\tab}VAST+, an extension to the existing VAST service, which summarizes and presents structural similarity on the level of biological assemblies or macromolecular complexes. \par
+{\pntext\f2\'B7\tab}VAST+ simplifies structure neighboring results and shows, for macromolecular complexes tracked in MMDB, lists of similar complexes ranked by the extent of similarity. \par
+{\pntext\f2\'B7\tab}VAST+ replaces the previous VAST service as the default presentation of structure neighboring data in NCBI\rquote s \b Entrez query and retrieval system.\par
+
+\pard\sa200\sl276\slmult1\par
+\b0\par
+\b Dali\b0\par
+The Dali server is a network service for comparing protein structures in 3D. You submit the query protein structure and Dali compares them against those in the Protein Data Bank (PDB). \par
+comparing 3D structures may reveal biologically interesting similarities that are not detectable by comparing sequences.\par
+User can perform three types of database searches:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Heuristic PDB search \b0 - compares one query structure against those in the Protein Data Bank\par
+{\pntext\f2\'B7\tab}\b Exhaustive PDB25 search \b0 - compares one query structure against a representative subset of the Protein Data Bank\par
+{\pntext\f2\'B7\tab}\b Hierarchical AF-DB search \b0 - compares one query structure against a species subset of the AlphaFold Database\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\b\fs36 castp\fs28\par
+\b0\fs24 Geometric and topological properties of protein structures, including surface pockets, interior cavities and cross channels, are of fundamental importance for proteins to carry out their functions. \par
+Computed Atlas of Surface Topography of proteins (CASTp) is a web server that provides online services for locating, delineating and measuring these geometric and topological properties of protein structures.\par
+ (i) \b imprints \b0 of the negative \b volumes \b0 of \b pockets\b0 , \b cavities \b0 and channels, \par
+(ii) \b topographic features \b0 of biological assemblies in the Protein Data Bank, \par
+(iii) \b improved visualization \b0 of protein structures and pockets, \par
+(iv) \b more intuitive structural\b0  and \b annotated information\b0 , including information of secondary structure, functional sites, variant sites and other annotations of protein residues\par
+\b\fs36 netncglyc \par
+\b0\fs24 (To predict binding pocket for Glycosylation sites)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs28 NetNGlyc 4.0 Server can be used to predict the glycosylation sites of proteins  that enables proteome-wide discovery of O-glycan sites using \lquote bottom-up\rquote  ETD-based mass spectrometric analysis\b\par
+{\pntext\f2\'B7\tab}\b0 This information can be used by researchers for a wide range of studies, including \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 investigations of signaling receptors, \par
+{\pntext\f2\'B7\tab}discoveries of cancer therapeutics, \par
+{\pntext\f2\'B7\tab}understanding of mechanism of drug actions, \par
+{\pntext\f2\'B7\tab}studies of immune disorder diseases, \par
+{\pntext\f2\'B7\tab}analysis of protein\f1\endash nanoparticle interactions, \par
+{\pntext\f2\'B7\tab}inference of protein functions\f0\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs32 netphos\b0\fs28\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 NetPhos - 3.1 server can be used to predict the phosphorylation sites of proteins. \par
+{\pntext\f0 2.\tab}Protein phosphorylation at serine, threonine or tyrosine residues affects a multitude of cellular signaling processes. \par
+{\pntext\f0 3.\tab}Phosphorylation sites predicted by neural networks. NetPhos - 3.1 server (Generic phosphorylation sites in eukaryotic proteins) is used.\par
+{\pntext\f0 4.\tab}server predicts serine, threonine or tyrosine phosphorylation sites in eukaryotic proteins using ensembles of neural networks\par
+{\pntext\f0 5.\tab}This information can be used by researchers for a wide range of studies, including \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 investigations of signaling receptors, \par
+{\pntext\f2\'B7\tab}discoveries of cancer therapeutics, \par
+{\pntext\f2\'B7\tab}understanding of mechanism of drug actions, \par
+{\pntext\f2\'B7\tab}studies of immune disorder diseases, \par
+{\pntext\f2\'B7\tab}analysis of protein\f1\endash nanoparticle interactions, \par
+{\pntext\f2\'B7\tab}inference of protein functions\f0\par
+
+\pard\sa200\sl276\slmult1\par
+\par
+\par
+\fs22\par
+}
+ 
