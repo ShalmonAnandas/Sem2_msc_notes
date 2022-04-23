@@ -50,7 +50,7 @@ public class question_5 extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\Sem2_msc_notes\\rani_maam\\Practical_5\\resources\\gnkhalsalogo.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\nasha\\Pictures\\amogus.png")); // NOI18N
         jLabel1.setToolTipText("");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
@@ -140,7 +140,7 @@ public class question_5 extends javax.swing.JFrame {
                     .addComponent(jRadioButton2))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
