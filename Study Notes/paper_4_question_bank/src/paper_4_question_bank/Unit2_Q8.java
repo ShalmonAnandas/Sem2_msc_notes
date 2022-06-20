@@ -16,13 +16,11 @@ public class Unit2_Q8 {
         int area = s^2;
         System.out.println("Area of Square is "+ area);
     }
-    
     //method to calculate area of triangle
     void calarea(int b, int h){
         int area = (b*h)/2;
         System.out.println("Area of Triangle is "+ area);
     }
-    
     //main method
     public static void main(String[] args){
         //calling class as an object
